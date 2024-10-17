@@ -1,0 +1,16 @@
+$offBlack: hsl(0, 0%, 8%);
+$darkGrey: hsl(0, 0%, 12%);
+$grey: hsl(0, 0%, 20%);
+$white: hsl(0, 0%, 100%);
+$green: hsl(75, 94%, 57%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Inter', sans-serif;
+  background: $offBlack;
+}

@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  background: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=main.css.map */
