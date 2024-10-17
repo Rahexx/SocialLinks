@@ -8,4 +8,72 @@
 .container {
   font-family: "Inter", sans-serif;
   background: hsl(0, 0%, 8%);
+}
+
+.profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 500px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 12px;
+  background: hsl(0, 0%, 12%);
+}
+.profile_avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+}
+.profile_name {
+  font-size: 22px;
+  font-weight: 700;
+}
+.profile_location {
+  color: hsl(75, 94%, 57%);
+}
+.profile_description {
+  font-size: 12px;
+}
+.profile_media {
+  display: inline-block;
+  width: 100%;
+  list-style: none;
+}
+.profile_media_link {
+  height: 40px;
+  width: 100%;
+  margin: 12px 0;
+  line-height: 40px;
+  text-align: center;
+  background: hsl(0, 0%, 20%);
+  border-radius: 8px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(75, 94%, 57%);
 }/*# sourceMappingURL=main.css.map */
