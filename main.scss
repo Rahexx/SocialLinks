@@ -3,6 +3,19 @@ $darkGrey: hsl(0, 0%, 12%);
 $grey: hsl(0, 0%, 20%);
 $white: hsl(0, 0%, 100%);
 $green: hsl(75, 94%, 57%);
+$fontXXS: 12px;
+$fontXS: 13px;
+$fontS: 14px;
+$fontM: 16px;
+$fontL: 22px;
+$fontXL: 28px;
+$marginS: 6px;
+$marginM: 8px;
+$marginL: 24px;
+$heightS: 40px;
+$heightM: 44px;
+$heightL: 80px;
+$heightXL: 92px;
 
 * {
   margin: 0;
@@ -19,35 +32,44 @@ $green: hsl(75, 94%, 57%);
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  height: 500px;
-  padding: 16px;
+  width: 333px;
+  height: 510px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: $white;
-  font-size: 14px;
+  font-size: $fontS;
   transform: translate(-50%, -50%);
   border-radius: 12px;
   background: $darkGrey;
 
   &_avatar {
-    height: 80px;
-    width: 80px;
+    height: $heightL;
+    width: $heightL;
+    margin-bottom: $marginL;
     border-radius: 100%;
   }
 
+  &_info {
+    margin-bottom: $marginL;
+  }
+
   &_name {
-    font-size: 22px;
+    margin-bottom: $marginS;
+    font-size: $fontL;
     font-weight: 700;
   }
 
   &_location {
+    text-align: center;
+    font-size: $fontXS;
     color: $green;
   }
 
   &_description {
-    font-size: 12px;
+    margin-bottom: $marginM;
+    font-size: $fontXXS;
   }
 
   &_media {
@@ -56,10 +78,10 @@ $green: hsl(75, 94%, 57%);
     list-style: none;
 
     &_link {
-      height: 40px;
+      height: $heightS;
       width: 100%;
-      margin: 12px 0;
-      line-height: 40px;
+      margin: 14px 0;
+      line-height: $heightS;
       text-align: center;
       background: $grey;
       border-radius: 8px;
@@ -73,11 +95,44 @@ $green: hsl(75, 94%, 57%);
   left: 0;
   right: 0;
   color: $white;
-  font-size: 12px;
+  font-size: $fontXXS;
   text-align: center;
 
   a {
     text-decoration: none;
     color: $green;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile {
+    width: 400px;
+    height: 580px;
+    padding: 32px;
+    font-size: $fontM;
+
+    &_avatar {
+      height: $heightXL;
+      width: $heightXL;
+    }
+
+    &_name {
+      font-size: $fontXL;
+    }
+
+    &_location {
+      font-size: $fontM;
+    }
+
+    &_description {
+      font-size: $fontS;
+    }
+
+    &_media {
+      &_link {
+        height: $heightM;
+        line-height: $heightM;
+      }
+    }
   }
 }

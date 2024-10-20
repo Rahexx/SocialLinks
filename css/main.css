@@ -14,9 +14,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  height: 500px;
-  padding: 16px;
+  width: 333px;
+  height: 510px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,16 +37,24 @@
 .profile_avatar {
   height: 80px;
   width: 80px;
+  margin-bottom: 24px;
   border-radius: 100%;
 }
+.profile_info {
+  margin-bottom: 24px;
+}
 .profile_name {
+  margin-bottom: 6px;
   font-size: 22px;
   font-weight: 700;
 }
 .profile_location {
+  text-align: center;
+  font-size: 13px;
   color: hsl(75, 94%, 57%);
 }
 .profile_description {
+  margin-bottom: 8px;
   font-size: 12px;
 }
 .profile_media {
@@ -57,7 +65,7 @@
 .profile_media_link {
   height: 40px;
   width: 100%;
-  margin: 12px 0;
+  margin: 14px 0;
   line-height: 40px;
   text-align: center;
   background: hsl(0, 0%, 20%);
@@ -76,4 +84,30 @@
 .attribution a {
   text-decoration: none;
   color: hsl(75, 94%, 57%);
+}
+
+@media (min-width: 768px) {
+  .profile {
+    width: 400px;
+    height: 580px;
+    padding: 32px;
+    font-size: 16px;
+  }
+  .profile_avatar {
+    height: 92px;
+    width: 92px;
+  }
+  .profile_name {
+    font-size: 28px;
+  }
+  .profile_location {
+    font-size: 16px;
+  }
+  .profile_description {
+    font-size: 14px;
+  }
+  .profile_media_link {
+    height: 44px;
+    line-height: 44px;
+  }
 }/*# sourceMappingURL=main.css.map */
