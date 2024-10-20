@@ -70,6 +70,14 @@
   text-align: center;
   background: hsl(0, 0%, 20%);
   border-radius: 8px;
+  font-weight: 600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.profile_media_link:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 20%);
+  background: hsl(75, 94%, 57%);
 }
 
 .attribution {
