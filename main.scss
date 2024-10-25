@@ -34,7 +34,7 @@ $heightXL: 92px;
   left: 50%;
   width: 333px;
   height: 510px;
-  padding: 20px;
+  padding: 20px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,27 +97,12 @@ $heightXL: 92px;
   }
 }
 
-.attribution {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  color: $white;
-  font-size: $fontXXS;
-  text-align: center;
-
-  a {
-    text-decoration: none;
-    color: $green;
-  }
-}
-
 @media (min-width: 768px) {
   .profile {
-    width: 400px;
-    height: 580px;
+    width: 356px;
+    height: 600px;
     padding: 32px;
-    font-size: $fontM;
+    font-size: $fontXS;
 
     &_avatar {
       height: $heightXL;
